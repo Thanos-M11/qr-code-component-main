@@ -38,11 +38,12 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
   - created a footer tag with a class `attribution` as given by the challenger.
 - **STYLING**
   - created global color and width variables
-  - set margin and padding to 0
+  - used a CSS reset from [Josh Comeau](https://www.joshwcomeau.com/css/custom-css-reset/)
   - found the given background color hex code using a tool [imagecolorpicker](https://imagecolorpicker.com/). I had to take a snapshot and upload the screenshot.
-  - used a `flex` display in the `container` class and positioned the whole container in the middle of the viewport using the `position` property.
-  - preset the width of the whole container to 375px - 6em using the `calc()` function.
-  - calculated a fixed width for `p` tags.
+  - used a `flex` display in the `container` class and positioned the whole container in the middle of the viewport
+  - initialized a git repository
+  - committed and pushed files on git
+  - deployed the page on [github pages](https://pages.github.com/)
 
 ### Built with
 
@@ -53,7 +54,16 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### What I learned
 
-- `figure` element tag
+> **_I would like to thank Grace (@grace-snow) for her valuable recommendations which I received from the frontend mentors community as feedback_**
+
+Following her advice I learned:
+
+- not to use the `figure` element on this project because we don't include any `figcaption`
+- what `alt` text to be included in an image element
+- changed the `p` element of the first bit of text to a heading
+- centered the component on the screen using `flexbox` and not `position` property. **Position absolute** removes the component from the normal document flow and breaks on smaller screens!
+- did the same with the footer. Included it within a `flexbox` wrapper.
+- used a full modern CSS reset from [Josh Comeau](https://www.joshwcomeau.com/css/custom-css-reset/)
 
 ### Continued development
 
@@ -65,6 +75,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Useful resources
 
 Book: [CSS in Depth by Keith J. Grant](https://www.manning.com/books/css-in-depth-second-edition)
+
+[Josh's Custom CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/)
 
 ## Author
 
