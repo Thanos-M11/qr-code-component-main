@@ -1,0 +1,78 @@
+:root {
+  --color-White: hsl(0, 0%, 100%);
+  --color-Lightgray: hsl(212, 45%, 89%);
+  --color-Grayishblue: hsl(220, 15%, 55%);
+  --color-Darkblue: hsl(218, 44%, 22%);
+  --color-background: #d5e1ef;
+  --width: calc(375px - 6em);
+  --qrcode-padding: 0.2em;
+  --calculated-width: calc(var(--width) - var(--qrcode-padding));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: var(--color-background);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2em;
+  justify-content: center;
+  text-align: center;
+  gap: 1em;
+  width: var(--width);
+  background-color: var(--color-White);
+  border-radius: 0.7em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.qrcode {
+  margin: 0 auto;
+}
+
+.qrcode img {
+  width: var(--width);
+  border-radius: 0.7em;
+}
+
+.line-1 {
+  width: var(--calculated-width);
+  margin: 0 auto;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.line-2 {
+  max-width: var(--calculated-width);
+  margin: 0 auto;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-Grayishblue);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translate(-50%, -1%);
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
