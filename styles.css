@@ -1,21 +1,50 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
 :root {
   --color-White: hsl(0, 0%, 100%);
   --color-Lightgray: hsl(212, 45%, 89%);
   --color-Grayishblue: hsl(220, 15%, 55%);
   --color-Darkblue: hsl(218, 44%, 22%);
   --color-background: #d5e1ef;
-  --width: calc(375px - 6em);
-  --qrcode-padding: 0.2em;
-  --calculated-width: calc(var(--width) - var(--qrcode-padding));
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  box-sizing: border-box;
 }
 
 body {
@@ -25,51 +54,45 @@ body {
   background-color: var(--color-background);
 }
 
-.container {
+.column {
+  min-height: 100vh;
+  max-width: 375px;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  padding: 1.2em;
   justify-content: center;
-  text-align: center;
-  gap: 1em;
-  width: var(--width);
+  padding: 1em;
+}
+
+.container {
+  margin-top: auto;
   background-color: var(--color-White);
   border-radius: 0.7em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .qrcode {
-  margin: 0 auto;
-}
-
-.qrcode img {
-  width: var(--width);
   border-radius: 0.7em;
 }
 
 .line-1 {
-  width: var(--calculated-width);
-  margin: 0 auto;
-  font-size: 1.3rem;
+  color: var(--color-Darkblue);
   font-weight: 700;
+  text-align: center;
 }
 
 .line-2 {
-  max-width: var(--calculated-width);
-  margin: 0 auto;
-  font-size: 1rem;
-  font-weight: 400;
   color: var(--color-Grayishblue);
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: center;
 }
 
 .attribution {
-  position: absolute;
-  bottom: 1%;
-  left: 50%;
-  transform: translate(-50%, -1%);
+  margin-top: auto;
   font-size: 11px;
   text-align: center;
 }
