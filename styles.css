@@ -61,7 +61,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1em;
+  padding: 1em 2em;
 }
 
 .container {
@@ -86,7 +86,7 @@ body {
 
 .line-2 {
   color: var(--color-Grayishblue);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
   text-align: center;
 }
