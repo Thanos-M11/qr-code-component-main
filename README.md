@@ -33,8 +33,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
   - imported the [Outfit](https://fonts.google.com/selection?query=outfit) font family from Google according to `style-guide.md`
   - added a `style.css` file to be linked to the `index.html`
   - inserted a `link` tag related to stylesheet with reference to the `style.css`
-  - created a section element with a `container` class that contains a `figure` tag and two `p` tags.
-  - assigned a class of `line-1` and `line-2` to each of the `p` tags accordingly.
+  - created a section element with a `container` class that contains a heading tag and a `p` tag.
+  - assigned a class of `line-1` and `line-2` to each of child elements of the container.
   - created a footer tag with a class `attribution` as given by the challenger.
 - **STYLING**
   - created global color and width variables
